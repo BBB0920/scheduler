@@ -207,10 +207,10 @@ storiesOf("Button", module)
   )
 
   //Form -Edit stories
-  .add("Form", () => 
+  .add("Edit", () => 
     <Form
       student="Lyon Lee"
-      interviewer={interviewer.id}
+      interviewer={1}
       interviewers={interviewers}
       onSave={action("onSave")}
       onCancel={action("onCancel")}
@@ -218,7 +218,7 @@ storiesOf("Button", module)
   )
 
   //Form -Create stories
-  .add("Form", () => 
+  .add("Create", () => 
     <Form
       interviewers={interviewers}
       onSave={action("onSave")}
